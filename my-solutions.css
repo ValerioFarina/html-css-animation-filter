@@ -70,3 +70,20 @@
     border-radius: 20px;
     filter: sepia(70%) grayscale(40%);
 }
+
+/* Esercizio 9 */
+.ex-9-img {
+    animation: translation 1.5s;
+    transition: all 1.5s;
+}
+
+@keyframes translation {
+    from {margin: 0;}
+    to {margin-left: 100px; margin-top: 50px;}
+}
+
+.ex-9-img:hover {
+    border-radius: 20px;
+    transform: scale(1.5);
+    filter: grayscale(50%) sepia(50%);
+}
