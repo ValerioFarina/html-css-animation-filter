@@ -111,21 +111,48 @@
 
 /* Esercizio 12 */
 .ex-12-button:hover .ex-12-top-white {
-    animation: left 2s linear;
+    animation: move-top 2s linear;
 }
 
-@keyframes left {
+@keyframes move-top {
     0% {left: 10%;}
     50% {left: calc(100% - 60px);}
     100% {left: 10%;}
 }
 
 .ex-12-button:hover .ex-12-bottom-white {
-    animation: right 2s linear;
+    animation: move-bottom 2s linear;
 }
 
-@keyframes right {
+@keyframes move-bottom {
     0% {right: 20%;}
     50% {right: calc(100% - 60px);}
     100% {right: 20%;}
+}
+
+/* Esercizio 13 */
+.ex-13-button:hover .ex-13-top-white {
+    animation: rotate-top 2.5s linear;
+}
+
+@keyframes rotate-top {
+    0% {left: 10%; top: -10px;}
+    35% {left: calc(100% - 30px); top: -10px;}
+    45% {left: calc(100% - 30px); top: calc(100% - 10px);}
+    80% {left: -30px; top: calc(100% - 10px);}
+    90% {left: -30px; top: -10px;}
+    100% {left: 10%; top: -10px;}
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: rotate-bottom 2.5s linear;
+}
+
+@keyframes rotate-bottom {
+    0% {right: 20%; bottom: -10px;}
+    35% {right: calc(100% - 30px); bottom: -10px;}
+    45% {right: calc(100% - 30px); bottom: calc(100% - 10px);}
+    80% {right: -30px; bottom: calc(100% - 10px);}
+    90% {right: -30px; bottom: -10px;}
+    100% {right: 20%; bottom: -10px;}
 }
